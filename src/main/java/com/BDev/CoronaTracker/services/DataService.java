@@ -46,5 +46,19 @@ public class DataService {
         return allRecords;
     }
 
+    public ArrayList<record> searchbyparam(String query)
+    {
+        ArrayList<record> baselist=this.getList();
+        ArrayList<record> finalList=new ArrayList<>();
+        for(record r: baselist)
+        {
+            if(r.matchesString(query))
+            {
+                finalList.add(r);
+            }
+        }
+        return finalList;
+    }
+
 
 }

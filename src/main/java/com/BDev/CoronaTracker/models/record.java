@@ -85,4 +85,12 @@ public class record {
         this.Incidence_Rate=Float.parseFloat(rec.get(12).equals("")?"0":rec.get(12));
         this.CaseToFatality_Ratio=Float.parseFloat(rec.get(13).equals("")?"0":rec.get(13));
     }
+    public boolean matchesString(String query)
+    {
+        if(this.getAdmin2().contains(query) || this.getCombined_Key().contains(query) || this.getCountry_Region().contains(query))
+        {
+            return true;
+        }
+        return false;
+    }
 }
