@@ -25,8 +25,10 @@ public class displayController {
     @GetMapping("/all")
     public String getMainData() {
         ArrayList<record> resultList=dtService.getList();
-        String json =new Gson().toJson(resultList);
-        return json;
+        String  json =new Gson().toJson(resultList);
+        System.out.println(json.substring(2,json.length()-2));
+        return json.substring(2,json.length()-2);
+
     }
 
     @GetMapping("/search/{queryParam}")

@@ -7,6 +7,7 @@ class SearchFunction{
         }
         this.loadHomePage()
         this.assignOnClickMethods()
+        console.log("JS started execution")
     }
     fillTable(record){
     var row=this.dataTable.insertRow(0)
