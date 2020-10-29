@@ -1,9 +1,9 @@
 class SearchFunction{
     constructor(){
         this.elements={
-        searchBar : document.findElementById("searchBar"),
-        searchBtn : document.findElementById("searchBtn"),
-        dataTable : document.findElementById("dataTable")
+        searchBar : document.getElementById("searchBar"),
+        searchBtn : document.getElementById("searchBtn"),
+        dataTable : document.getElementById("dataTable")
         }
         this.loadHomePage()
         this.assignOnClickMethods()
