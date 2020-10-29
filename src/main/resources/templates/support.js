@@ -1,10 +1,15 @@
 class SearchFunction{
     constructor(){
+        console.log("Entered the Constructor!")
         this.elements={
         searchBar : document.getElementById("searchBar"),
         searchBtn : document.getElementById("searchBtn"),
         dataTable : document.getElementById("dataTable")
         }
+        console.log("Defined the elements")
+        console.log(this.elements.searchBar)
+        console.log(this.elements.searchBtn)
+        console.log(this.elements.dataTable)
         this.loadHomePage()
         this.assignOnClickMethods()
         console.log("JS started execution")
