@@ -47,7 +47,7 @@ class SearchFunction{
             }
     }
     assignOnClickMethods(){
-    this.elements.searBtn.addEventListener('click',(event)=>{
+    this.elements.searchBtn.addEventListener('click',(event)=>{
         var query= this.elements.searchBar.value
           const userAction = async () => {
                         const response = await fetch(`localhost:8080/search/${query}`);
